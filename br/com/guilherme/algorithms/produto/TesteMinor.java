@@ -1,6 +1,6 @@
 package br.com.guilherme.algorithms.produto;
 
-public class EncontreOMenor {
+public class TesteMinor {
 
     public static void main(String[] args) {
 
@@ -16,6 +16,7 @@ public class EncontreOMenor {
 		+ produtos[maisBarato].getPreco());
     }
 
+    //2N
     private static int buscaMenor(Produto[] produtos, int inicio) {
 	int maisBarato = inicio;
 
