@@ -12,7 +12,16 @@ public class TestaOrdernacao {
         	new Produto("Fusca", 17000.00)
 	};
 	
-	for (int atual = 0; atual < produtos.length; atual++) {
+	ordernar(produtos, produtos.length);
+	
+	for (Produto produto : produtos) {
+            System.out.println(produto.getNome() + " custa " + produto.getPreco());
+        }
+	
+    }
+    
+   private static void ordernar(Produto[] produtos, int quantidadeElementos) {
+       for (int atual = 0; atual < produtos.length; atual++) {
 	    int menor = buscaMenor(produtos, atual);
 	    
 	    Produto produtoAtual = produtos[atual];
@@ -21,12 +30,8 @@ public class TestaOrdernacao {
 	    produtos[atual] = produtoMenor;
 	    produtos[menor] = produtoAtual;
 	}
-	
-	for (Produto produto : produtos) {
-            System.out.println(produto.getNome() + " custa " + produto.getPreco());
-        }
-	
     }
+    
     
     private static int buscaMenor(Produto[] produtos, int inicio) {
    	int maisBarato = inicio;
