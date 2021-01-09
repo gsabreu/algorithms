@@ -19,7 +19,7 @@ public class TesteMerge {
 		new Nota("ana", 10),
 	};
 	
-	Nota[] rank = merge(notasMauricio, notasAlberto);
+	Nota[] rank = mergeSort(notasMauricio, notasAlberto);
 	
 	for (Nota nota : rank) {
 	    System.out.println(nota.getAluno() + ": " + nota.getValor());
@@ -27,7 +27,7 @@ public class TesteMerge {
 	
     }
 
-    private static Nota[] merge(Nota[] notas1, Nota[] notas2) {
+    private static Nota[] mergeSort(Nota[] notas1, Nota[] notas2) {
 	int total  = notas2.length + notas1.length;
 	Nota[] result = new Nota[total];
 	
