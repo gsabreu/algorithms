@@ -1,6 +1,6 @@
 package br.com.guilherme.algorithms.produto;
 
-public class EncontreOMenor {
+public class TestaOrdernacao {
     
     public static void main(String[] args) {
 	
@@ -12,12 +12,20 @@ public class EncontreOMenor {
         	new Produto("Fusca", 17000.00)
 	};
 	
-	int maisBarato = 0;
+	for (int atual = 0; atual < produtos.length; atual++) {
+	    int menor = buscaMenor(produtos, atual);
+	    
+	    Produto produtoAtual = produtos[atual];
+	    Produto produtoMenor = produtos[menor];
+	    
+	    produtos[atual] = produtoMenor;
+	    produtos[menor] = produtoAtual;
+	}
 	
-	maisBarato = buscaMenor(produtos, maisBarato);
+	for (Produto produto : produtos) {
+            System.out.println(produto.getNome() + " custa " + produto.getPreco());
+        }
 	
-	System.out.println(maisBarato);
-	System.out.println("O carro " + produtos[maisBarato].getNome() +  " é o mais barato e  custa " + produtos[maisBarato].getPreco());
     }
     
     private static int buscaMenor(Produto[] produtos, int inicio) {
