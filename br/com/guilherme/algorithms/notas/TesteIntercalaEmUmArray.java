@@ -3,9 +3,18 @@ package br.com.guilherme.algorithms.notas;
 public class TesteIntercalaEmUmArray {
 
     public static void main(String[] args) {
-	Nota[] notas = { new Nota("andre", 4), new Nota("mariana", 5), new Nota("carlos", 8.5), new Nota("paulo", 9),
-		new Nota("jonas", 3), new Nota("juliana", 6.7), new Nota("gui", 7), new Nota("lucia", 9.3),
-		new Nota("ana", 10) };
+	Nota[] notas = { 
+		new Nota("andre", 4),
+		new Nota("carlos", 8.5),
+		new Nota("ana", 10),
+		new Nota("paulo", 9),
+		new Nota("jonas", 3),
+		new Nota("juliana", 6.7),
+		new Nota("gui", 7),
+		new Nota("mariana", 5),
+		new Nota("lucia", 9.3)
+		
+	};
 
 	Nota[] rank = intercala(notas, 0, 4, notas.length);
 
