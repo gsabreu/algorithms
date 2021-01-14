@@ -20,6 +20,7 @@ public class TestaPivota {
 	for (int analisando = 0; analisando < termino - 1; analisando++) {
 	    Nota atual = notas[analisando];
 	    if (atual.getValor() <= pivo.getValor()) {
+		troca(notas, analisando, menoresEncontrados);
 		menoresEncontrados++;
 	    }
 	}
