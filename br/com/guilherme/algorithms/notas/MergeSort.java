@@ -1,6 +1,6 @@
 package br.com.guilherme.algorithms.notas;
-
-public class TestaOrdenacaoAoIntercalar {
+// Merge sort
+public class MergeSort {
 
     public static void main(String[] args) {
 	Nota[] notas = { new Nota("andre", 4), new Nota("carlos", 8.5), new Nota("ana", 10), new Nota("paulo", 9),
