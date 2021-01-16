@@ -8,8 +8,14 @@ public class QuickSort {
 		new Nota("gui", 7) };
 	
 	orderna(notas, 0 , notas.length);
-	int posicao = busca(notas, 0, notas.length, 9.3);
-	System.out.println("Encontrado na posição " + posicao);
+	int posicao = busca(notas, 0, notas.length, 7);
+	
+	if(posicao >= 0) {
+	    System.out.println("Encontrado na posição " + posicao);
+	} else {
+	    System.out.println("Não encontrado");
+	}
+	
 
 	for (int i = 0; i < notas.length; i++) {
 	    Nota nota = notas[i];
@@ -18,6 +24,7 @@ public class QuickSort {
     }
 
     private static int busca(Nota[] notas, int de, int ate, double buscando) {
+	if( de > ate) return -1;
 	int meio = (de + ate) / 2;
 	Nota nota = notas[meio];
 	if(nota.getValor() == buscando) {
