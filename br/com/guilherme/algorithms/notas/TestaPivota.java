@@ -24,7 +24,6 @@ public class TestaPivota {
 		menoresEncontrados++;
 	    }
 	}
-
 	troca(notas, termino - 1, menoresEncontrados);
     }
 
