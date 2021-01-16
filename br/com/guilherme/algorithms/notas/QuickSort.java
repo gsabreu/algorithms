@@ -18,13 +18,15 @@ public class QuickSort {
     }
 
     private static int busca(Nota[] notas, int de, int ate, double buscando) {
-	for (int atual = de; atual < ate; atual++) {
-	    if(notas[atual].getValor() == buscando) {
-		return atual;
-	    }
+	int meio = (de + ate) / 2;
+	Nota nota = notas[meio];
+	if(nota.getValor() == buscando) {
+	    return meio;
 	}
-	return - 1;
-	
+	else if(buscando < nota.getValor()) {
+	    return busca(notas, de, meio -1, buscando);
+	}
+	return busca(notas, meio + 1, ate, buscando);
     }
 
     private static void orderna(Nota[] notas, int de, int ate) {
