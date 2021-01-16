@@ -1,5 +1,5 @@
 package br.com.guilherme.algorithms.notas;
-
+//linear
 public class TestaPivota {
 
     public static void main(String[] args) {
