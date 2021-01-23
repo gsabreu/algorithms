@@ -5,7 +5,7 @@ public class DividirParaConquistarOrdemAlphabetica {
     public static void main(String[] args) {
 	String[] nomes = { "Maria", "Camila", "Fernando", "Jonas", "Andressa", "Paloma", "Alberto", "Junior", "Enzo",
 		"Paulo" };
-
+ 
 	sort(nomes, 0, nomes.length);
 	int position = busca(nomes, 0, nomes.length, "Paloma");
 	
