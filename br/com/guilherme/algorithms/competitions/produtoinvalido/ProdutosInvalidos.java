@@ -36,6 +36,7 @@ public class ProdutosInvalidos {
 		inactiveProducts.add(inactiveProduct);
 	    }
 	}
+	
 	return inactiveProducts;
     }
 
