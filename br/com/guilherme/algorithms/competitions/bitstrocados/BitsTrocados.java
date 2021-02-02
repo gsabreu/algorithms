@@ -23,7 +23,6 @@ public class BitsTrocados {
 	    }
 	    count++;
 	}
-		
     }
 
     private static int getNotes(int valorSaque, int noteValue) {
