@@ -19,7 +19,7 @@ public class BitsTrocados {
 		valorSaque = getNotes(valorSaque, notes[2]);
 		System.out.print(" ");  
 		valorSaque = getNotes(valorSaque, notes[3]);
-		System.out.println("\n");
+		System.out.println("\n"); 
 	    }
 	    count++;
 	}
